@@ -22,3 +22,7 @@ router_info.yml
         var: output.stdout
 
 ansible-playbook -i inventory.yml router_info.yml
+
+
+ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 -oHostkeyAlgorithms=+ssh-rsa admin@192.168.30.1
+
